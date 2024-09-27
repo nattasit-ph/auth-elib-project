@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+
+@font-face {
+    font-family: 'FCIconic';
+    src: url('../fonts/FCIconic/FC Iconic Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'FCIconic';
+    src: url('../fonts/FCIconic/FC Iconic Bold.ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'FCIconic';
+    src: url('../fonts/FCIconic/FC Iconic Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+    font-family: 'FCIconic';
+    src: url('../fonts/FCIconic/FC Iconic Bold Italic.ttf');
+	font-weight: 500;
+	font-style: italic;
+}
+.text-auth {
+    color: var(--bs-text-auth);
+}
+body {
+	font-family: var(--bs-font-primary), 'Sarabun', sans-serif;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+.font-pri { font-family: var(--bs-font-primary); }
+.font-sec { font-family: var(--bs-font-secondary); }
+.font-tri { font-family: var(--bs-font-tertiary); }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: var(--bs-font-primary), sans-serif !important;
+}
+
+.cursor-pointer { cursor: pointer; }
+.fst-italic {
+    font-style: italic !important;
+}
+
+ /*
+|--------------------------------------------------------------------------
+| form-control
+|--------------------------------------------------------------------------
+*/
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: var(--bs-secondary);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cstyle%3Esvg%7Bfill:%2300c300%7D%3C/style%3E%3Cpath d='M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z'/%3E%3C/svg%3E");
+}
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+    border-color: var(--bs-secondary);
+    box-shadow: 0 0 0 0.25rem rgba(0, 195, 0, 0.25);
+}
+
+.form-control.is-invalid:not([name='password']), .was-validated .form-control:invalid:not([name='password']) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cstyle%3Esvg%7Bfill:%23c83545%7D%3C/style%3E%3Cpath d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z'/%3E%3C/svg%3E");
+}
+
+.form-control.is-invalid:is([name='password']), .was-validated .form-control:invalid:is([name='password']) {
+    background-image: none !important;
+}
+
+ /*
+|--------------------------------------------------------------------------
+| a href link
+|--------------------------------------------------------------------------
+*/
+
+a.text-link-primary{
+    color : var(--bs-link-auth) !important;
+    opacity: 0.8 !important;
+}
+a.text-link-primary:hover{
+    color : var(--bs-link-auth-hover) !important;
+    opacity: 0.8 !important;
+}
+a.text-link-secondary{
+    color : var(--bs-link-auth-go-back) !important;
+    opacity: 0.8 !important;
+}
+a.text-link-secondary:hover{
+    color : var(--bs-link-auth-go-back-hover) !important;
+    opacity: 0.8 !important;
+}
+
+ /*
+|--------------------------------------------------------------------------
+| Text & Button
+|--------------------------------------------------------------------------
+*/
+
+.text-primary {
+	color : var(--bs-primary) !important;
+}
+.text-secondary {
+	color : var(--bs-secondary) !important;
+}
+.text-triple {
+	color : var(--bs-triple) !important;
+}
+.a-link:hover {
+    text-decoration: underline !important;
+}
+.text-primary.a-link:hover {
+    text-decoration: underline !important;
+    text-decoration-color: var(--bs-secondary) !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Background Image
+|--------------------------------------------------------------------------
+*/
+
+.bg-wave{
+	background-image: url('../img/goodkit/orang-bg.png');
+	/* background-position: center; */
+	/* background-repeat:no-repeat; */
+	margin-left: 1px;
+}
+
+footer{
+	background-image: url('../img/goodkit/footer/footer.png');
+}
+
+/*
+|--------------------------------------------------------------------------
+| Font Size
+|--------------------------------------------------------------------------
+*/
+
+.fs-smaller { font-size: 0.9rem; }
+.fs-normal { font-size: 1rem; }
+.fs-bigger { font-size: 1.2rem; }
+
+/*
+|--------------------------------------------------------------------------
+| asset
+|--------------------------------------------------------------------------
+*/
+.lh-2 {
+    line-height: 2 !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Background Color
+|--------------------------------------------------------------------------
+*/
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--bs-secondary) !important;
+}
+
+.bg-tertiary {
+	background-color: var(--bs-tertiary) !important;
+}
+
+.bg-triple {
+	background-color: var(--bs-triple) !important;
+}
+
+.bg-breadcrumbs {
+	font-size: 1rem;
+	background-color: var(--bs-secondary) !important;
+}
+div.sub-link i:first-child {
+	display: none !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Padding
+|--------------------------------------------------------------------------
+*/
+
+.pr-1 {
+	padding-right: 10px;
+}
+.pr-2 {
+	padding-right: 20px;
+}
+.pr-3 {
+	padding-right: 30px;
+}
+.pr-4 {
+	padding-right: 40px;
+}
+.pr-5 {
+	padding-right: 50px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Font Weight
+|--------------------------------------------------------------------------
+*/
+.fw-600 {
+	font-weight: 600;
+}
+.fw-700 {
+	font-weight: 700;
+}
+.fw-800 {
+	font-weight: 800;
+}
+
+/*
+|--------------------------------------------------------------------------
+| alert-success
+|--------------------------------------------------------------------------
+*/
+
+.alert-success {
+  color: var(--bs-success);
+  background-color: rgba(0, 195, 0, 0.1);
+  border-color: rgba(0, 195, 0, 0.1);
+}
+.alert-success .alert-link {
+  color: var(--bs-success);
+}
+.alert-success hr {
+  border-top-color: var(--bs-success);
+}
+
+/*
+|--------------------------------------------------------------------------
+| alert-danger
+|--------------------------------------------------------------------------
+*/
+
+.alert-danger {
+  color: var(--bs-danger);
+  background-color: rgba(220, 53, 69, 0.1);
+  border-color: rgba(220, 53, 69, 0.1);
+}
+.alert-danger .alert-link {
+  color: var(--bs-danger);
+}
+.alert-danger hr {
+  border-top-color: var(--bs-danger);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Sweet-Alert2
+|--------------------------------------------------------------------------
+*/
+.swal2-icon.swal2-success {
+    border-color: var(--bs-secondary) !important;
+}
+.swal2-icon.swal2-success [class^='swal2-success-line'] {
+    background-color: var(--bs-secondary) !important;
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: 0.25em solid rgba(0, 195, 0, 0.3);
+}
+.swal2-icon.swal2-error {
+    border-color: var(--bs-danger) !important;
+}
+.swal2-icon.swal2-error [class^='swal2-x-mark-line'] {
+    background-color: var(--bs-danger) !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| border
+|--------------------------------------------------------------------------
+*/
+
+.border-dotted {
+    border-style: dotted !important;
+}
+.border-dashed {
+    border-style: dashed !important;
+}
+.border-solid {
+    border-style: solid !important;
+}
+.border-double {
+    border-style: double !important;
+}
+.border-groove {
+    border-style: groove !important;
+}
+.border-ridge {
+    border-style: ridge !important;
+}
+.border-inset {
+    border-style: inset !important;
+}
+.border-outset {
+    border-style: outset !important;
+}
+.border-none {
+    border-style: none !important;
+}
+.border-hidden {
+    border-style: hidden !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| list-group
+|--------------------------------------------------------------------------
+*/
+
+.list-group {
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* width */
+.list-group::-webkit-scrollbar {
+    width: 1rem !important
+}
+
+/* Track */
+.list-group::-webkit-scrollbar-track {
+    border-radius: 5px !important;
+}
+
+/* Handle */
+.list-group::-webkit-scrollbar-thumb {
+    border: 0.4rem solid #fff;
+    border-radius: 50rem !important;
+    background: var(--bs-grey) !important;
+}
+
+/* Handle on hover */
+.list-group::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-gray) !important;
+}
+/*
+|--------------------------------------------------------------------------
+| Text & Button
+|--------------------------------------------------------------------------
+*/
+.btn-auth-primary {
+	background-color: var(--bs-btn-auth) !important;
+	color: var(--bs-btn-auth-text) !important;
+	border: 1px solid var(--bs-btn-auth-border) !important;
+}
+.btn-auth-primary:hover {
+	background-color: var(--bs-btn-auth-hover) !important;
+	color: var(--bs-btn-auth-text) !important;
+	border: 1px solid var(--bs-btn-auth-border) !important;
+}
+.btn-primary {
+	background-color: var(--bs-primary) !important;
+	color: var(--bs-white) !important;
+	border: 1px solid var(--bs-secondary) !important;
+}
+.btn-primary:hover {
+	background-color: var(--bs-primary-gray) !important;
+	color: var(--bs-white) !important;
+	border: 1px solid var(--bs-secondary) !important;
+}

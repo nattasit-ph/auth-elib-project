@@ -1,0 +1,76 @@
+
+/** end main **/
+
+.text-sign-up {
+	color: var(--bs-secondary);
+}
+
+.hover-underline:hover {
+	text-decoration: underline;
+}
+
+.text-sign-up:hover {
+	text-decoration: underline;
+	color: var(--bs-secondary);
+}
+
+.border-login {
+	border-top: 5px solid var(--bs-secondary);
+}
+
+.text-login {
+	font-family: var(--bs-font-primary);
+}
+
+.square {
+	height: 5px;
+	width: 10%;
+	margin-bottom: -1px;
+	background-color: white;
+}
+
+.img-logo img {
+	max-height: 180px;
+	max-width: -webkit-fill-available;
+	margin: 0px 1.5rem 0px 1.5rem;
+}
+
+.border-under-logo {
+	border-bottom: 2px solid white;
+}
+
+.input-login {
+	height: 2.5rem;
+}
+
+.border-r-20 {
+	border-radius: 20px;
+}
+
+.text-forgot-password {
+	color: white;
+}
+
+.text-forgot-password:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.banner-text {
+	width: 60%;
+	max-width: 450px;
+	margin-bottom: 80px;
+}
+
+.border-right-register {
+	border-right: 5px solid var(--bs-secondary);
+}
+
+.img-logo-register img {
+	max-height: 150px!important;
+}
+
+.input-regster {
+	height: 2.5rem;
+}
+

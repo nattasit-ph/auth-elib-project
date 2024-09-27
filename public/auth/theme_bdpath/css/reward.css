@@ -1,0 +1,60 @@
+/*-------------------------------------------------
+    Reward Main
+-------------------------------------------------*/
+.card-reward {
+    border-radius: 30px;
+}
+.circle-point {
+    background-color: var(--bs-secondary);
+    position: absolute; 
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.text-point {
+  margin-top: 20%;
+}
+.title-reward {
+    margin-top: 50px;
+}
+.link-reward {
+
+}
+.header-reward {
+    margin-left: 50%;
+}
+
+
+.cal-diff-150 {
+    margin-top: -150px !important;
+}
+
+.cal-diff-300 {
+    margin-top: -300px !important;
+}
+
+.cal-plus-150 {
+    margin-top: 150px !important;
+}
+
+@media (max-width:767px) {
+    .header-reward {
+        margin-left: 0%;
+        text-align: center;
+    }
+    .cal-diff-150 {
+        margin:0 !important;
+    }
+    .cal-diff-300 {
+        margin:0 !important;
+    }
+    .cal-plus-150 {
+        margin:0 !important;
+    }
+}
+

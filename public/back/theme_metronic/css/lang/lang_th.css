@@ -1,0 +1,7 @@
+@charset "UTF-8";
+:root {
+  --bs-font-primary: 'Kanit', sans-serif;
+  --bs-font-secondary: 'Bai Jamjuree', sans-serif;
+  --bs-font-tertiary: 'Kanit', sans-serif;
+  --bs-font-button: 'Kanit', sans-serif;
+}

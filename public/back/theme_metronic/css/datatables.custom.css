@@ -1,0 +1,60 @@
+table.dataTable {
+	border-bottom: 0 !important;
+	padding: 1rem 0 !important;
+}
+table.dataTable th {
+	border: 0 !important;
+	border-bottom: 1px solid #ebedf2 !important;
+	padding: 1rem 0.75rem !important;
+	font-weight: 500 !important;
+}
+table.dataTable tbody {
+	font-family: Kanit;
+	font-size: 1.1rem;
+}
+table.dataTable .dropdown-menu {
+	font-family: 'Poppins' !important;
+	font-size: 0.9rem !important;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+	background-image: none;
+}
+.dataTables_paginate .paginate_button {
+    border-radius: 3px;
+    cursor: pointer;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    height: 2.25rem;
+    width: 2.5rem;
+    vertical-align: middle;
+    padding: 0.5rem;
+    text-align: center;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 400;
+    border: 0;
+    outline: none !important;
+}
+.dataTables_paginate .paginate_button.previous,
+.dataTables_paginate .paginate_button.next {
+	min-width: 2.25rem;
+	width: auto;
+	color: #ffffff;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+	background-color: #F2F3F8 !important;
+	color: #ffffff;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #5d78ff !important;
+    color: #ffffff !important;
+    border: 0;
+}

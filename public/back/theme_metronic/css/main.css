@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree|Kanit:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Trirong:400,500&display=swap');
+
+.hide{display:none;}
+.hidden{visibility:hidden;}
+
+input[type='checkbox'] {
+	cursor: pointer !important;
+}
+::placeholder {
+  color: #bbb !important;
+}
+.form-check-label {
+	cursor: pointer !important;
+	margin-left: 5px;
+}
+hr.dotted { border-bottom: 0.07rem dotted #ebedf2; }
+hr.dashed { border-bottom: 0.07rem dashed #ebedf2; }
+.font-pri { font-family: Kanit !important; }
+.font-sec { font-family: 'Bai Jamjuree' !important; }
+.font-tri { font-family: 'Bai Jamjuree' !important; }
+
+.form-control { font-family: 'Bai Jamjuree' !important; font-size:1.2rem !important; }
+.form-text { font-family: 'Bai Jamjuree' !important; }
+.en-num { font-family: 'Roboto Slab' !important; }
+
+.fs-09 { font-size: 0.9rem !important; }
+.fs-10 { font-size: 1rem !important; }
+.fs-11 { font-size: 1.1rem !important; }
+.fs-12 { font-size: 1.2rem !important; }
+.fs-13 { font-size: 1.3rem !important; }
+.fs-14 { font-size: 1.4rem !important; }
+.fs-15 { font-size: 1.5rem !important; }
+.lh-15 { line-height: 1.5 !important; }
+.lh-20 { line-height: 2 !important; }
+.lh-25 { line-height: 2.5 !important; }
+.lh-30 { line-height: 3 !important; }
+.ls-none { list-style: none !important; }
+
+.sidebar-logo {
+	color:#fff !important; 
+	font-size:2rem;
+}
+.sidebar-logo span {
+	color:#ffb822; 
+}
+
+.bg-label-success {
+	background: rgba(10, 187, 135, 0.1) !important;
+	color: #0abb87 !important;
+}
+.bg-label-success .alert-icon i,
+.bg-label-success .alert-text,
+.bg-label-success .alert-close i { 
+	color: #0abb87 !important; 
+}
+.bg-label-warning {
+	background: rgba(255, 184, 34, 0.1) !important;
+	color: #ffb822 !important;
+}
+.bg-label-warning .alert-icon i,
+.bg-label-warning .alert-text,
+.bg-label-warning .alert-close i { 
+	color: #ffb822 !important; 
+}
+.bg-label-danger {
+	background: rgba(253, 57, 122, 0.1) !important;
+	color: #fd397a !important;
+}
+.bg-label-danger .alert-icon i,
+.bg-label-danger .alert-text,
+.bg-label-danger .alert-close i { 
+	color: #fd397a !important; 
+}
+.bg-label-info {
+	background: rgba(85, 120, 235, 0.1) !important;
+	color: #5578eb !important;
+}
+.bg-label-info .alert-icon i,
+.bg-label-info .alert-text,
+.bg-label-info .alert-close i { 
+	color: #5578eb !important; 
+}
+.bg-label-brand {
+	background: rgba(93, 120, 255, 0.1) !important;
+}
+.bg-grey {
+	background: #F7F8FC !important;
+}
+
+.w-5 { width:5% !important; }
+.w-10 { width:10% !important; }
+.w-15 { width:15% !important; }
+.w-20 { width:20% !important; }
+.w-30 { width:30% !important; }
+.w-40 { width:40% !important; }
+
+.modal-content {
+	border: 0 !important;
+}
+
+.bagge-top
+{
+	margin-top: -20px;
+}
+
+.btn {
+	cursor: pointer !important;
+}
+.form-control input.error,
+.form-control textarea.error,
+.form-control select.error {
+	border: 1px solid red;
+}
+.form-group {
+	margin-bottom: 2rem;
+}
+.form-group label,
+input,
+select {
+	font-family: 'Bai Jamjuree' !important;
+	font-size: 15px !important;
+}
+.form-group > label,
+.form-group.row label {
+	font-family: 'Kanit' !important;
+	font-size: 1.2rem !important;
+}
+
+.form-inline-block label {
+	font-family: 'Kanit' !important;
+	font-size: 1.1rem !important;
+}
+table th {
+	font-family: 'Kanit' !important;
+	font-size: 1rem !important;
+}
+table.dt-bootstrap4 th:nth-child(1) {
+	width: 5% !important;
+}
+table tbody tr td {
+	font-family: 'Bai Jamjuree' !important;
+}
+table .kt-checkbox {
+	margin-bottom: 13px !important;
+}
+
+.kt-portlet__head.bg-label-brand {
+	background: rgba(93, 120, 255, 0.2) !important;
+}
+
+.kt-aside--minimize .kt-aside .kt-aside__brand-logo {
+	display: none;
+}
+
+/*
+ * Overriden classes
+*/
+.kt-widget4 .kt-widget4__item.kt-notification-v2__item:first-child {
+	padding-top: 1rem;
+}
+.kt-widget4 .kt-widget4__item.kt-notification-v2__item:last-child {
+	padding-bottom: 1rem;
+}
+.kt-widget4 .kt-widget4__item .kt-widget4__title {
+	font-family: 'Bai Jamjuree' !important;
+	font-size: 16px !important;
+}
+.kt-section .kt-section__title {
+	font-family: 'Bai Jamjuree';
+	font-weight: bold;
+}
+.kt-nav__item.active {
+	color: #5867dd !important;
+}
+
+.kt-widget4 .kt-widget4__item .kt-widget4__title.chapter-title {
+	font-family: 'Kanit' !important;
+	font-size: 22px !important;
+	font-weight: 500;
+	/*color: #5d78ff !important;*/
+}
+.box-chapter:hover,
+.box-chapter:focus,
+.box-chapter:active,
+.box-chapter.active {
+	background-color: #F7F8FA !important;
+	border: 1px solid #F7F8FA !important;
+}
+
+.swal2-popup .swal2-title {
+	line-height: 2rem;
+}
+
+.is-invalid input,
+.is-invalid select,
+.is-invalid span.select2 { 
+	border: 1px solid red !important;
+	border-radius: 4px;
+}
+.is-invalid div.error {
+	color: red;
+	font-size: 80%;
+	margin-top: 0.25rem;
+	font-weight: 400;
+}
+
+.kt-widget.kt-widget--user-profile-1 .kt-widget__head .kt-widget__media img {
+	border-radius: 50%;
+}
+.kt-widget.kt-widget--user-profile-1 {
+	margin-top: 1.2rem;
+	margin-bottom: 1.2rem;
+	border-bottom: 0.07rem dashed #ebedf2;
+}
+.kt-widget.kt-widget--user-profile-1:last-child {
+	border-bottom: 0;
+}
+
+/* 
+ * Override Select 2
+ */
+.select2-selection.select2-selection--multiple {
+	padding: 0.7em;
+}
+.select2-results__options,
+.select2-container--default .select2-selection--single, .select2-container--default .select2-selection--multiple {
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+.select2-container--default .select2-results__option .select2-results__group {
+	font-family: Kanit !important; 
+	font-size: 1.1rem !important; 
+	font-weight: 500;
+}
+.select2-container--default .select2-results__option .select2-results__option {
+	font-family: 'Bai Jamjuree' !important; 
+	font-size: 1rem !important; 
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	font-family: 'Bai Jamjuree' !important; 
+	font-size: 1rem !important; 
+}
+
+.h-20px {
+    height: 20px !important;
+}
+.w-20px {
+    width: 20px !important;
+}
+.rounded-sm {
+    border-radius: 0.28rem !important;
+}
+.symbol.symbol-20 > img {
+    width: 100%;
+    max-width: 20px;
+    height: 20px;
+}
+.navi {
+    padding: 0;
+    margin: 0;
+    display: block;
+    list-style: none;
+}
+.navi .navi-item {
+    padding: 0;
+    display: block;
+    list-style: none;
+}
+.navi .navi-item .navi-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+}
+.navi .navi-item .navi-link {
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    color: #3F4254;
+}
+.navi .navi-item .navi-link {
+    font-size: 1rem;
+}
+.navi .navi-item a:hover {
+    background-color: #F3F6F9;
+}
+.dropdown-lang {
+	max-width: 100px;
+}
+
+.kt-menu__section-text { 
+	font-family: Kanit !important; 
+	font-size: 1.0rem !important; 
+}
+.kt-menu__link-text { 
+	font-family: Kanit !important; 
+	font-size: 1.1rem !important; 
+}
+.kt-menu__link-text.sub-menu { 
+	font-family: Kanit !important; 
+	font-size: 1rem !important; 
+}
+

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+:root {
+  --bs-font-primary: 'FCIconic';
+  --bs-font-secondary: 'Poppins', sans-serif;
+  --bs-font-tertiary: 'Trirong', sans-serif;
+  --bs-font-button: 'Kanit', sans-serif;
+}

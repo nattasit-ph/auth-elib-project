@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+
+@font-face {
+    font-family: 'FCIconic';
+    src: url('../fonts/FCIconic/FC Iconic Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'FCIconic';
+    src: url('../fonts/FCIconic/FC Iconic Bold.ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'FCIconic';
+    src: url('../fonts/FCIconic/FC Iconic Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+    font-family: 'FCIconic';
+    src: url('../fonts/FCIconic/FC Iconic Bold Italic.ttf');
+	font-weight: 500;
+	font-style: italic;
+}
+
+body {
+	font-family: var(--bs-font-primary), 'Sarabun', sans-serif;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+.font-pri { font-family: var(--bs-font-primary); }
+.font-sec { font-family: var(--bs-font-secondary); }
+.font-tri { font-family: var(--bs-font-tertiary); }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: var(--bs-font-primary), sans-serif;
+}
+
+.cursor-pointer { cursor: pointer; }
+
+
+ /*
+|--------------------------------------------------------------------------
+| Text & Button
+|--------------------------------------------------------------------------
+*/
+.btn{
+	border-radius: 2rem;
+	font-size: 1.2em;
+}
+.btn-primary {
+	background-color: var(--bs-primary) !important;
+	color: var(--bs-white) !important;
+	border: 1px solid var(--bs-primary) !important;
+}
+.btn-outline-primary {
+	background-color: var(--bs-white) !important;
+	color: var(--bs-primary) !important;
+	border: 1px solid var(--bs-primary) !important;
+}
+.btn-secondary {
+	background-color: var(--bs-secondary) !important;
+	color: var(--bs-white) !important;
+	border: 1px var(--bs-secondary) !important;
+}
+
+.btn-outline-secondary {
+	background-color: var(--bs-white) !important;
+	color: var(--bs-dark) !important;
+	border: 1px solid var(--bs-secondary) !important;
+}
+.btn-outline-triple {
+	background-color: var(--bs-white) !important;
+	color: var(--bs-dark) !important;
+	border: 1px solid var(--bs-grey) !important;
+}
+.text-primary {
+	color : var(--bs-primary) !important;
+}
+.text-primary-gray {
+	color : var(--bs-primary-gray) !important;
+}
+.text-secondary {
+	color : var(--bs-secondary) !important;
+}
+.text-tertiary {
+	color : var(--bs-tertiary) !important;
+}
+.text-triple {
+	color : var(--bs-triple) !important;
+}
+.text-success {
+	color : var(--bs-success) !important;
+}
+.text-info {
+	color : var(--bs-info) !important;
+}
+.text-warning {
+	color : var(--bs-warning) !important;
+}
+.text-danger {
+	color : var(--bs-danger) !important;
+}
+.text-light {
+	color : var(--bs-light) !important;
+}
+.text-dark {
+	color : var(--bs-dark) !important;
+}
+.text-grey {
+	color : var(--bs-grey) !important;
+}
+.btn-del-comment,
+.btn-del-comment:hover {
+    font-size: 1rem;
+    background-color: var(--bs-secondary);
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+    color: #ffff;
+}
+
+.btn-edit-comment,
+.btn-edit-comment:hover {
+    font-size: 1rem;
+    background-color: var(--bs-white);
+	border: 1px solid var(--bs-primary) !important;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+    color: var(--bs-primary);
+}
+a.rounded {
+	border-radius: 1rem!important;
+}
+a.text-white:hover {
+	color: #FFB81C !important;
+	/*text-decoration: underline;*/
+}
+a.bg-secondary:hover,
+a.bg-secondary:focus,
+a.bg-secondary:active {
+	background-color: #FFB81C !important;
+	color: #fff !important;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Background Image
+|--------------------------------------------------------------------------
+*/
+.bg-wave{
+	background-image: url('../img/goodkit/orang-bg.png');
+	/* background-position: center; */
+	/* background-repeat:no-repeat; */
+	margin-left: 1px;
+}
+
+footer{
+	background-image: url('../img/goodkit/footer/footer.png');
+}
+/*
+|--------------------------------------------------------------------------
+| Font Size
+|--------------------------------------------------------------------------
+*/
+.fs-very-small { font-size: 0.5rem; }
+.fs-smaller { font-size: 0.9rem; }
+.fs-normal { font-size: 1rem; }
+.fs-bigger { font-size: 1.2rem; }
+
+/*
+|--------------------------------------------------------------------------
+| Background Color
+|--------------------------------------------------------------------------
+*/
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--bs-secondary) !important;
+}
+
+.bg-tertiary {
+	background-color: var(--bs-tertiary) !important;
+}
+
+.bg-triple {
+	background-color: var(--bs-triple) !important;
+}
+
+.bg-breadcrumbs {
+	background-color: var(--bs-secondary) !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Padding
+|--------------------------------------------------------------------------
+*/
+.pr-1 {
+	padding-right: 10px;
+}
+.pr-2 {
+	padding-right: 20px;
+}
+.pr-3 {
+	padding-right: 30px;
+}
+.pr-4 {
+	padding-right: 40px;
+}
+.pr-5 {
+	padding-right: 50px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Font Weight
+|--------------------------------------------------------------------------
+*/
+.fw-600 {
+	font-weight: 600;
+}
+.fw-700 {
+	font-weight: 700;
+}
+.fw-800 {
+	font-weight: 800;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Bordor
+|--------------------------------------------------------------------------
+*/
+.border-primary {
+    border: 2px solid var(--bs-primary) !important;
+    background-color: var(--bs-primary);
+}
+
+.border-secondary {
+    border: 2px solid var(--bs-secondary) !important;
+    background-color: var(--bs-secondary);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Shadow
+|--------------------------------------------------------------------------
+*/
+
+.box-shadow-prod {
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Pagination
+|--------------------------------------------------------------------------
+*/
+.btn-page-pre {
+	margin-right:10px;
+	margin-top: -8px
+}
+.btn-page-pre i {
+	left: -10px;
+	top: 13px;
+}
+
+
+.btn-page-next {
+	margin-top: -8px;
+}
+
+.btn-page-next i {
+	right: -10px;
+	top: 13px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Dropdown List
+|--------------------------------------------------------------------------
+*/
+.dropdown-item:active {
+	background-color: #efefef;
+}
+/*
+|--------------------------------------------------------------------------
+| Radio Button
+|--------------------------------------------------------------------------
+*/
+
+.form-check-input:checked {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+.nav-link:focus,
+.nav-link:active
+{
+	color: var(--bs-secondary);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Back to top button
+|--------------------------------------------------------------------------
+*/
+#btn_back_to_top {
+	display: inline-block;
+	background-color: var(--bs-gray-dark);
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+  }
+#btn_back_to_top::before {
+	/*font-family: "Font Awesome 5 Free";
+	content: "\f167";*/
+	font-weight: 400;
+	font-style: normal;
+	/*font-size: 1.4em;*/
+	line-height: 50px;
+	color: #fff;
+}
+#btn_back_to_top:hover {
+	cursor: pointer;
+	opacity: 0.8 !important;
+}
+#btn_back_to_top i:hover {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+#btn_back_to_top:active {
+	background-color: var(--bs-secondary);
+}
+#btn_back_to_top.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Scollbar
+|--------------------------------------------------------------------------
+*/
+/* width */
+::-webkit-scrollbar {
+	width: 10px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888 !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555 !important;
+}
+

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+:root {
+  --bs-font-primary: 'Roboto Slab', sans-serif;
+  --bs-font-secondary: 'Roboto', sans-serif;
+  --bs-font-tertiary: 'Roboto', sans-serif;
+  --bs-font-button: 'Roboto', sans-serif;
+}

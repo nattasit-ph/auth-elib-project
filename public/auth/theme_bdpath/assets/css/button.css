@@ -1,0 +1,26 @@
+/* .btn {
+	border-radius: 1.5rem 1.5rem 0 1.5rem;
+}
+.btn-primary {
+	background-color: #009A93;
+	border: 1px solid #009A93;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+	background-color: #047772 !important;
+	border: 1px solid #047772 !important;
+} */
+.btn {
+	border-radius: 1.5rem 1.5rem 0 1.5rem;
+}
+.btn-primary {
+	background-color: var(--bs-primary) !important;
+	border: 1px solid var(--bs-primary) !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+	background-color: var(--bs-primary-gray) !important;
+	border: 1px solid var(--bs-primary-gray) !important;
+}

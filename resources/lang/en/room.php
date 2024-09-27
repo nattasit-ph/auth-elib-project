@@ -1,0 +1,47 @@
+<?php
+
+return [
+    'cra' => [
+        'header' => 'Room Reservation',
+    ],
+    
+    'title' => 'Room Reservation',
+    'room_type' => 'Room Type',
+    'room_name' => 'Room/Space',
+    'search_room' => 'Search Room',
+    'date' => 'Date',
+    'from' => 'From', 
+    'to' => 'To',
+    'all' => 'All',
+    'search' => 'Search',
+    'found_error' => 'Found an error',
+    'please_select_date' => 'Please select date.',
+    'please_choose_end_time' => 'Please choose end time.',
+    'please_choose_start_time' => 'Please choose start time.',
+    'time_not_match' => 'The booking time does not correspond to the current time.',
+    'time_equal' => 'The start time cannot be equal to the end time.',
+    'start_time_more_end_time' => 'The start time cannot be greater than the end time.',
+    'room_not_found' => 'No room found.',
+    'seat' => 'Maximun :num seats',
+    'open_24' => 'Opening 24 Hours',
+    'opening_hour' => 'Opening Hours',
+    'please_choose' => 'Please Choose',
+    'facibilities' => 'Facibilities',
+    'booking_now' => 'Booking Now',
+    'schedule' => 'Schedule',
+    'enter_date_time' => 'specify date and time.',
+    'please_choose_time' => 'Please choost time.',
+    'time_not_current' => 'The booking time does not correspond to the current time.',
+    'start_not_more_end' => 'The start time cannot be greater than the end time.',
+    'please_select_collect_time' => 'Please select the correct time slot',
+
+    'max_hour' => 'Cannot booking more than :num hours/time',
+    'in_advance_day' => 'You can reserve a room before :num days in advance.',
+
+    'subject_reserve' => 'Specify the subject of the reservation.',
+    'room_not_found' => 'Room not found.',
+    'others_reserve_on_time' => 'Someone else has reserved a room during that time.',
+    'result' => 'Result',
+    'reserve_success' => 'Reservation Success',
+    'reserve_save' => 'Your request has been saved.',
+];

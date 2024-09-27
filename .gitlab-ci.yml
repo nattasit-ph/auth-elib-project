@@ -1,0 +1,137 @@
+image: minkbear/php-deployer:6
+
+variables:
+  NOTI_AUTH: "Authorization: Bearer $LINE_ACCESS_TOKEN"
+  NOTI_MESSAGE: "message=\nAuth BDPath ($CI_COMMIT_REF_NAME):\nDeployed version"
+
+before_script:
+- export DEPLOYMENT_ROOT_PATH=$CI_PROJECT_DIR/deployment
+- export DEPLOYMENT_PATH=$DEPLOYMENT_ROOT_PATH/projects/belib_path/auth/
+- export APP_VERSION=$(cat "$CI_PROJECT_DIR/public/version.txt")
+
+stages:
+- deploy
+- notify
+
+deploy_charoen_uat:
+  stage: deploy
+  script:
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - ssh-deactivate-key-checking
+    - dep --version
+    - git --version
+    - composer --version
+    - php --version
+    - git clone git@gitlab.com:bookdose/deployment.git "$DEPLOYMENT_ROOT_PATH"
+    - echo "$SERVERS_YML" > "$DEPLOYMENT_PATH"/servers.yml
+    - cd "$DEPLOYMENT_ROOT_PATH" && composer update --quiet
+    - cd "$DEPLOYMENT_PATH" && dep deploy charoen_uat -vvv
+    - cd "$CI_PROJECT_DIR" && rm -Rf "$DEPLOYMENT_ROOT_PATH"
+    - ssh-add -D
+    - ls -l
+  only:
+    - develop
+
+deploy_path_uat:
+  stage: deploy
+  script:
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - ssh-deactivate-key-checking
+    - dep --version
+    - git --version
+    - composer --version
+    - php --version
+    - git clone git@gitlab.com:bookdose/deployment.git "$DEPLOYMENT_ROOT_PATH"
+    - echo "$SERVERS_YML" > "$DEPLOYMENT_PATH"/servers.yml
+    - cd "$DEPLOYMENT_ROOT_PATH" && composer update --quiet
+    - cd "$DEPLOYMENT_PATH" && dep deploy path_uat -vvv
+    - cd "$CI_PROJECT_DIR" && rm -Rf "$DEPLOYMENT_ROOT_PATH"
+    - ssh-add -D
+    - ls -l
+  only:
+    - develop
+
+deploy_readdi_uat:
+  stage: deploy
+  script:
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - ssh-deactivate-key-checking
+    - dep --version
+    - git --version
+    - composer --version
+    - php --version
+    - git clone git@gitlab.com:bookdose/deployment.git "$DEPLOYMENT_ROOT_PATH"
+    - echo "$SERVERS_YML" > "$DEPLOYMENT_PATH"/servers.yml
+    - cd "$DEPLOYMENT_ROOT_PATH" && composer update --quiet
+    - cd "$DEPLOYMENT_PATH" && dep deploy readdi_uat -vvv
+    - cd "$CI_PROJECT_DIR" && rm -Rf "$DEPLOYMENT_ROOT_PATH"
+    - ssh-add -D
+    - ls -l
+  only:
+    - develop
+
+deploy_charoen_prd:
+  stage: deploy
+  script:
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - ssh-deactivate-key-checking
+    - dep --version
+    - git --version
+    - composer --version
+    - php --version
+    - git clone git@gitlab.com:bookdose/deployment.git "$DEPLOYMENT_ROOT_PATH"
+    - echo "$SERVERS_YML" > "$DEPLOYMENT_PATH"/servers.yml
+    - cd "$DEPLOYMENT_ROOT_PATH" && composer update --quiet
+    - cd "$DEPLOYMENT_PATH" && dep deploy charoen_prd -vvv
+    - cd "$CI_PROJECT_DIR" && rm -Rf "$DEPLOYMENT_ROOT_PATH"
+    - ssh-add -D
+    - ls -l
+  only:
+    - master
+
+
+deploy_path_prd:
+  stage: deploy
+  script:
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - ssh-deactivate-key-checking
+    - dep --version
+    - git --version
+    - composer --version
+    - php --version
+    - git clone git@gitlab.com:bookdose/deployment.git "$DEPLOYMENT_ROOT_PATH"
+    - echo "$SERVERS_YML" > "$DEPLOYMENT_PATH"/servers.yml
+    - cd "$DEPLOYMENT_ROOT_PATH" && composer update --quiet
+    - cd "$DEPLOYMENT_PATH" && dep deploy path_prd -vvv
+    - cd "$CI_PROJECT_DIR" && rm -Rf "$DEPLOYMENT_ROOT_PATH"
+    - ssh-add -D
+    - ls -l
+  only:
+    - master
+
+deploy_readdi_prd:
+  stage: deploy
+  script:
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - ssh-deactivate-key-checking
+    - dep --version
+    - git --version
+    - composer --version
+    - php --version
+    - git clone git@gitlab.com:bookdose/deployment.git "$DEPLOYMENT_ROOT_PATH"
+    - echo "$SERVERS_YML" > "$DEPLOYMENT_PATH"/servers.yml
+    - cd "$DEPLOYMENT_ROOT_PATH" && composer update --quiet
+    - cd "$DEPLOYMENT_PATH" && dep deploy readdi_prd -vvv
+    - cd "$CI_PROJECT_DIR" && rm -Rf "$DEPLOYMENT_ROOT_PATH"
+    - ssh-add -D
+    - ls -l
+  only:
+    - master
+
+notification:
+  stage: notify
+  script:
+  - cat "$CI_PROJECT_DIR/public/version.txt"
+  - curl --request POST --header "$NOTI_AUTH" --form "$NOTI_MESSAGE $APP_VERSION" https://notify-api.line.me/api/notify
+  only:
+  - master

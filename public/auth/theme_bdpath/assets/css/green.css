@@ -1,0 +1,7 @@
+@import url(button.css);
+
+.form-control {
+	border-radius: 30px;
+	background-color: #f7f7f7;
+}
+
