@@ -15,7 +15,7 @@
 
 1. สร้าง database ชื่อว่า **belib_bdpath,belib_crpy,belib_readdi,belib_seed** ในเครื่อง
 2. CD เข้าไปยัง folder ที่จะวาง source code เช่น htdocs หรือ www (ถ้ายังไม่มีให้สร้าง folder ชื่อว่า belib_bdpath แล้ว CD เข้าไป)
-3. git clone -b develop https://gitlab.com/bookdose/tomahawk/auth-bdpath .
+3. git clone -b develop {git_url} .
 4. Copy ไฟล์ .env.example แล้วสร้างเป็นไฟล์ใหม่ที่เครื่องตัวเองชื่อว่า .env
 5. เปิดไฟล์ .env ขึ้นมาแก้ไขค่าเหล่านี้
 > - APP_URL 
@@ -25,5 +25,6 @@
 8. php artisan storage:link
 9. php artisan key:generate
 10. chmod -Rf 777 storage/
-11. php artisan optimize:clear && composer dump-autoload
+11. php artisan optimize:clear
+12. composer dump-autoload
 
